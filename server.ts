@@ -27,6 +27,8 @@ const ai = new GoogleGenAI({
   }
 });
 
+const geminiModel = process.env.GEMINI_MODEL || 'gemini-3.5-flash'; // Default to Gemini 3.5 Flash if not set
+
 // Helper: Extract user ID from a mock Bearer token (simple Authorization header)
 function getAuthUser(req: express.Request) {
   const authHeader = req.headers.authorization;
@@ -484,7 +486,7 @@ Ensure there are exactly ${days || 5} days in the dayByDay array. Ensure the cos
     }
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: geminiModel,// or 'gemini-1.5-pro'
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -515,7 +517,7 @@ app.post('/api/gemini/chat', async (req, res) => {
     }
 
     const chat = ai.chats.create({
-      model: 'gemini-2.5-flash',
+      model: geminiModel,
       config: {
         systemInstruction: 'You are TripWise, an elite, luxury AI Travel Concierge. Speak with sophistication, warmth, and high professional composure. Help users with smart, curated recommendations on food, hotels, packing lists, visa guides, local cultural rules, and hidden treasures. Avoid dry developer talk; sound like a premium private concierge.',
       }
