@@ -70,6 +70,7 @@ export interface Booking {
   id: string;
   user_id: string;
   package_id: string;
+  package_name?: string;
   status: BookingStatus;
   travelers: number;
   total_cost: number;
