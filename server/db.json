@@ -130,6 +130,40 @@
       "travel_style": "adventure",
       "climate": "tropical",
       "created_at": "2026-07-09T08:52:34.040Z"
+    },
+    {
+      "name": "Venice",
+      "description": "A stunning global destination for \"venice\", newly mapped and unlocked using real-time spatial travel nodes. Highly recommended for premium boutique sightseeing, immersive local dining, and seasonal adventure trails.",
+      "country": "International",
+      "city": "Venice",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "image_url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+      "budget_range": "₹60,000 - ₹95,000",
+      "best_season": "September - May",
+      "category": "adventure",
+      "is_featured": false,
+      "travel_style": "luxury",
+      "climate": "moderate",
+      "id": "dest-2d9uqatow",
+      "created_at": "2026-07-10T07:21:02.037Z"
+    },
+    {
+      "name": "Seattle",
+      "description": "A stunning global destination for \"seattle\", newly mapped and unlocked using real-time spatial travel nodes. Highly recommended for premium boutique sightseeing, immersive local dining, and seasonal adventure trails.",
+      "country": "International",
+      "city": "Seattle",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "image_url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+      "budget_range": "₹60,000 - ₹1,20,000",
+      "best_season": "September - May",
+      "category": "adventure",
+      "is_featured": false,
+      "travel_style": "luxury",
+      "climate": "moderate",
+      "id": "dest-msflnv3p1",
+      "created_at": "2026-07-10T07:21:57.399Z"
     }
   ],
   "packages": [
