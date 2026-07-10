@@ -753,7 +753,7 @@ The travel_style MUST be exactly one of: 'luxury', 'adventure', 'budget'.
 The climate MUST be exactly one of: 'tropical', 'alpine', 'moderate', 'desert'.`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: geminiModel,
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
@@ -874,7 +874,7 @@ Output ONLY raw valid JSON. Do not include any markdown fences or wrappers.`;
     }
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: geminiModel,
       contents: prompt,
       config: {
         responseMimeType: 'application/json',
