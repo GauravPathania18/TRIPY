@@ -67,21 +67,19 @@ export default function Navbar({
       transition: {
         staggerChildren: 0.05,
         delayChildren: 0.05,
-        duration: 0.25,
-        ease: 'easeOut'
-      }
+        duration: 0.25
+      } as any
     },
     exit: {
       opacity: 0,
       y: -15,
       transition: {
         staggerChildren: 0.03,
-        staggerDirection: -1,
-        duration: 0.2,
-        ease: 'easeIn'
+        staggerDirection: -1 as any,
+        duration: 0.2
       }
     }
-  };
+  } as any;
 
   const itemVariants = {
     hidden: { opacity: 0, x: -10 },
@@ -89,10 +87,8 @@ export default function Navbar({
       opacity: 1, 
       x: 0, 
       transition: { 
-        type: 'spring', 
-        stiffness: 300, 
-        damping: 24 
-      } 
+        duration: 0.2
+      }
     },
     exit: { 
       opacity: 0, 
@@ -101,7 +97,7 @@ export default function Navbar({
         duration: 0.15
       }
     }
-  };
+  } as any;
 
   return (
     <>
@@ -220,7 +216,7 @@ export default function Navbar({
                       alt={user.name}
                       className="w-8 h-8 rounded-full object-cover"
                     />
-                    <span className="text-sm font-medium pr-2 max-w-[100px] truncate text-slate-700 dark:text-slate-300">
+                    <span className="text-sm font-medium pr-2 max-w-25 truncate text-slate-700 dark:text-slate-300">
                       {user.name.split(' ')[0]}
                     </span>
                   </button>
@@ -418,7 +414,7 @@ export default function Navbar({
                         setTab('login');
                         setMobileMenuOpen(false);
                       }}
-                      className="px-4 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-cyan-500 dark:to-blue-600 text-white hover:opacity-95 text-center shadow-lg shadow-blue-500/10 transition-all active:scale-95 flex items-center justify-center gap-1.5"
+                      className="px-4 py-2.5 rounded-xl text-sm font-semibold bg-linear-to-r from-blue-600 to-indigo-600 dark:from-cyan-500 dark:to-blue-600 text-white hover:opacity-95 text-center shadow-lg shadow-blue-500/10 transition-all active:scale-95 flex items-center justify-center gap-1.5"
                     >
                       <span>Get Started</span>
                       <Sparkles className="w-3.5 h-3.5 text-cyan-200" />

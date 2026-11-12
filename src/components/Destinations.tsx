@@ -361,7 +361,7 @@ export default function Destinations({ setTab, user }: DestinationsProps) {
 
             {/* Gemini AI Discover Destination Assistant */}
             {searchQuery.trim() && (
-              <div className="lg:col-span-12 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-2xl bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-cyan-500/10 border border-blue-500/20 dark:border-cyan-500/20 shadow-inner mt-2">
+              <div className="lg:col-span-12 flex flex-col md:flex-row md:items-center justify-between gap-4 p-4 rounded-2xl bg-linear-to-r from-blue-500/10 via-indigo-500/10 to-cyan-500/10 border border-blue-500/20 dark:border-cyan-500/20 shadow-inner mt-2">
                 <div className="flex items-start gap-3">
                   <span className="flex h-2.5 w-2.5 relative mt-1.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
@@ -381,7 +381,7 @@ export default function Destinations({ setTab, user }: DestinationsProps) {
                 <button
                   onClick={handleAIDiscover}
                   disabled={aiDiscoverLoading}
-                  className="flex items-center gap-2 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 rounded-xl transition shadow-md hover:shadow-lg hover:shadow-indigo-500/20 active:scale-95 disabled:opacity-50 disabled:pointer-events-none cursor-pointer self-start md:self-auto"
+                  className="flex items-center gap-2 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 rounded-xl transition shadow-md hover:shadow-lg hover:shadow-indigo-500/20 active:scale-95 disabled:opacity-50 disabled:pointer-events-none cursor-pointer self-start md:self-auto"
                 >
                   {aiDiscoverLoading ? (
                     <>
@@ -429,10 +429,10 @@ export default function Destinations({ setTab, user }: DestinationsProps) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.05 }}
                   onClick={() => setSelectedDest(dest)}
-                  className="w-[280px] sm:w-[350px] md:w-[380px] flex-shrink-0 snap-start bg-white dark:bg-slate-900 border border-gray-200/30 dark:border-white/5 rounded-2xl overflow-hidden group shadow-md shadow-gray-200/5 dark:shadow-none cursor-pointer relative"
+                  className="w-70 sm:w-87.5 md:w-95 shrink-0 snap-start bg-white dark:bg-slate-900 border border-gray-200/30 dark:border-white/5 rounded-2xl overflow-hidden group shadow-md shadow-gray-200/5 dark:shadow-none cursor-pointer relative"
                 >
                   {/* Photo container */}
-                  <div className="relative overflow-hidden aspect-[4/5]">
+                  <div className="relative overflow-hidden aspect-4/5">
                     <img
                       src={dest.image_url}
                       alt={dest.name}
@@ -440,7 +440,7 @@ export default function Destinations({ setTab, user }: DestinationsProps) {
                       loading="lazy"
                     />
                     {/* Visual vignette */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-transparent to-transparent opacity-90"></div>
 
                     {/* Quick Badges inside cards */}
                     <div className="absolute top-4 left-4 flex flex-wrap gap-1.5 max-w-[75%]">
@@ -513,7 +513,7 @@ export default function Destinations({ setTab, user }: DestinationsProps) {
                       alt={selectedDest.name}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/10 to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-900/10 to-transparent"></div>
                     
                     {/* Close Button */}
                     <button

@@ -130,9 +130,9 @@ export default function App() {
               {/* HERO SECTION */}
               <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 bg-white dark:bg-slate-950 overflow-hidden text-left" id="home-hero">
                 {/* Decorative gradients */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-tr from-blue-600/10 to-cyan-500/10 rounded-full filter blur-[120px] pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-purple-600/5 to-blue-500/5 rounded-full filter blur-[100px] pointer-events-none"></div>
-                <div className="absolute inset-0 bg-[radial-gradient(#1e293b10_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff04_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
+                <div className="absolute top-0 right-0 w-150 h-150 bg-linear-to-tr from-blue-600/10 to-cyan-500/10 rounded-full filter blur-[120px] pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 w-100 h-100 bg-linear-to-tr from-purple-600/5 to-blue-500/5 rounded-full filter blur-[100px] pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(#1e293b10_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff04_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none"></div>
 
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full">
                   
@@ -153,7 +153,7 @@ export default function App() {
                       className="text-4xl sm:text-6xl font-display font-medium tracking-tight text-slate-900 dark:text-white leading-none"
                     >
                       Plan Smarter.<br />
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 font-bold">
+                      <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-cyan-500 to-purple-600 font-bold">
                         Travel Better.
                       </span>
                     </motion.h1>
@@ -350,25 +350,25 @@ export default function App() {
               <section className="py-24 bg-white dark:bg-slate-950 border-t border-gray-200/30 dark:border-white/5">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
                   <div className="text-center space-y-2">
-                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block font-mono">
+                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block">
                       <AnimatedCounter value={20} suffix="K+" />
                     </span>
                     <span className="text-xs sm:text-sm text-slate-400 uppercase tracking-widest font-mono">Trips Synced</span>
                   </div>
                   <div className="text-center space-y-2">
-                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block font-mono">
+                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block">
                       <AnimatedCounter value={150} suffix="+" />
                     </span>
                     <span className="text-xs sm:text-sm text-slate-400 uppercase tracking-widest font-mono">Countries Sourced</span>
                   </div>
                   <div className="text-center space-y-2">
-                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block font-mono">
+                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block">
                       <AnimatedCounter value={98} suffix="%" />
                     </span>
                     <span className="text-xs sm:text-sm text-slate-400 uppercase tracking-widest font-mono">Satisfaction</span>
                   </div>
                   <div className="text-center space-y-2">
-                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block font-mono">
+                    <span className="text-3xl sm:text-5xl font-display font-bold text-slate-900 dark:text-white block">
                       <AnimatedCounter value={5} suffix="M+" />
                     </span>
                     <span className="text-xs sm:text-sm text-slate-400 uppercase tracking-widest font-mono">AI recommendations</span>
@@ -421,7 +421,7 @@ export default function App() {
                           <img
                             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80"
                             alt="Aditya Sharma"
-                            className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                            className="w-10 h-10 rounded-full object-cover shrink-0"
                           />
                           <div className="min-w-0">
                             <p className="text-xs font-bold text-slate-800 dark:text-white truncate">Aditya Sharma</p>
@@ -432,7 +432,7 @@ export default function App() {
                           href="https://www.reddit.com/r/travel/comments/17q8j9w/just_returned_from_10_days_in_rajasthan_our/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-white/10 hover:border-blue-500 dark:hover:border-cyan-400 hover:text-blue-600 dark:hover:text-cyan-400 transition text-[10px] font-mono font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-white/5 cursor-pointer flex-shrink-0 whitespace-nowrap"
+                          className="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-white/10 hover:border-blue-500 dark:hover:border-cyan-400 hover:text-blue-600 dark:hover:text-cyan-400 transition text-[10px] font-mono font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-white/5 cursor-pointer shrink-0 whitespace-nowrap"
                         >
                           View Thread
                         </a>
@@ -457,7 +457,7 @@ export default function App() {
                           <img
                             src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80"
                             alt="Pooja Nair"
-                            className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                            className="w-10 h-10 rounded-full object-cover shrink-0"
                           />
                           <div className="min-w-0">
                             <p className="text-xs font-bold text-slate-800 dark:text-white truncate">Pooja Nair</p>
@@ -468,7 +468,7 @@ export default function App() {
                           href="https://www.reddit.com/r/backpacking/comments/119sh7q/trekking_in_the_himalayas_lessons_learned/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-white/10 hover:border-blue-500 dark:hover:border-cyan-400 hover:text-blue-600 dark:hover:text-cyan-400 transition text-[10px] font-mono font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-white/5 cursor-pointer flex-shrink-0 whitespace-nowrap"
+                          className="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-white/10 hover:border-blue-500 dark:hover:border-cyan-400 hover:text-blue-600 dark:hover:text-cyan-400 transition text-[10px] font-mono font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-white/5 cursor-pointer shrink-0 whitespace-nowrap"
                         >
                           View Thread
                         </a>
@@ -485,7 +485,7 @@ export default function App() {
                         </div>
                         <div className="text-amber-500 font-mono text-xs">★★★★★</div>
                         <p className="text-sm text-slate-600 dark:text-slate-300 font-light leading-relaxed">
-                          "I used the Swiss Rail travel plan from this app last winter. Traversing the alpine slopes through panoramic trains was magical. The platform mapped out all connections, ticket validation steps, and sightseeing lookouts perfectly. It’s like having a local transit guide in your pocket."
+                          "I used the Swiss Rail travel plan from this app last winter. Traversing the alpine slopes through panoramic trains was magical. The platform mapped out all connections, ticket validation steps, and sightseeing lookouts perfectly. It's like having a local transit guide in your pocket."
                         </p>
                       </div>
                       <div className="pt-4 border-t border-gray-100 dark:border-white/5 flex items-center justify-between gap-4">
@@ -493,7 +493,7 @@ export default function App() {
                           <img
                             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80"
                             alt="Marcus Vance"
-                            className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                            className="w-10 h-10 rounded-full object-cover shrink-0"
                           />
                           <div className="min-w-0">
                             <p className="text-xs font-bold text-slate-800 dark:text-white truncate">Marcus Vance</p>
@@ -504,7 +504,7 @@ export default function App() {
                           href="https://www.reddit.com/r/travel/comments/15k6p8u/scenic_trains_in_switzerland_which_are_the_best/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-white/10 hover:border-blue-500 dark:hover:border-cyan-400 hover:text-blue-600 dark:hover:text-cyan-400 transition text-[10px] font-mono font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-white/5 cursor-pointer flex-shrink-0 whitespace-nowrap"
+                          className="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-white/10 hover:border-blue-500 dark:hover:border-cyan-400 hover:text-blue-600 dark:hover:text-cyan-400 transition text-[10px] font-mono font-semibold text-slate-500 hover:bg-slate-50 dark:hover:bg-white/5 cursor-pointer shrink-0 whitespace-nowrap"
                         >
                           View Thread
                         </a>

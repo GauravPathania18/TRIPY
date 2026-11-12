@@ -53,10 +53,10 @@ export default function Login({ onAuthSuccess, setTab }: LoginProps) {
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80")' }}
         />
         {/* Blue/Teal Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-slate-950 via-slate-900/40 to-cyan-500/10 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-linear-to-tr from-slate-950 via-slate-900/40 to-cyan-500/10 mix-blend-multiply"></div>
 
         {/* Floating grid patterns */}
-        <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] bg-[size:16px_16px]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] bg-size-[16px_16px]"></div>
 
         {/* Content Overlay */}
         <div className="relative z-10 max-w-lg p-12 text-white">
@@ -79,7 +79,7 @@ export default function Login({ onAuthSuccess, setTab }: LoginProps) {
             className="text-4xl md:text-5xl font-display font-medium tracking-tight leading-tight mb-6"
           >
             The future of <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-semibold">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-400 font-semibold">
               travel planning
             </span>{' '}
             is here.
@@ -118,7 +118,7 @@ export default function Login({ onAuthSuccess, setTab }: LoginProps) {
       {/* Right Column: Glassmorphic Auth Form */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-6 sm:p-12 md:p-24 relative overflow-hidden bg-slate-50 dark:bg-slate-950">
         {/* Animated ambient blob */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-blue-500/5 to-cyan-500/5 rounded-full filter blur-[80px] pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-linear-to-tr from-blue-500/5 to-cyan-500/5 rounded-full filter blur-[80px] pointer-events-none"></div>
 
         <div className="w-full max-w-md relative z-10">
           <div className="text-center mb-8">

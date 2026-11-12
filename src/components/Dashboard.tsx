@@ -169,7 +169,7 @@ export default function Dashboard({ setTab, user, onProfileUpdate }: DashboardPr
         
         {/* Workspace banner */}
         <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 border border-white/5 shadow-2xl relative overflow-hidden mb-12 text-left">
-          <div className="absolute inset-0 bg-[radial-gradient(#ffffff03_1px,transparent_1px)] bg-[size:16px_16px]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(#ffffff03_1px,transparent_1px)] bg-size-[16px_16px]"></div>
           <div className="absolute top-1/2 right-12 -translate-y-1/2 opacity-10 pointer-events-none hidden lg:block">
             <Compass className="w-56 h-56 animate-spin text-white" />
           </div>
@@ -325,8 +325,8 @@ export default function Dashboard({ setTab, user, onProfileUpdate }: DashboardPr
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={getBudgetChartData()}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" opacity={0.15} />
-                    <XAxis dataKey="name" stroke="#94a3b8" fontSize={10} fontClass="font-mono" />
-                    <YAxis stroke="#94a3b8" fontSize={10} fontClass="font-mono" />
+                    <XAxis dataKey="name" stroke="#94a3b8" fontSize={10} />
+                    <YAxis stroke="#94a3b8" fontSize={10} />
                     <Tooltip formatter={(value: any) => `₹${value.toLocaleString()}`} />
                     <Bar dataKey="Cost" fill="#2563EB" radius={[4, 4, 0, 0]} barSize={32} />
                   </BarChart>
@@ -372,7 +372,7 @@ export default function Dashboard({ setTab, user, onProfileUpdate }: DashboardPr
                 <span>Workspace Bulletins</span>
               </h3>
 
-              <div className="space-y-3 max-h-[220px] overflow-y-auto">
+              <div className="space-y-3 max-h-55 overflow-y-auto">
                 {notifications.length === 0 ? (
                   <p className="text-xs text-slate-400 font-mono py-4">No new system updates.</p>
                 ) : (

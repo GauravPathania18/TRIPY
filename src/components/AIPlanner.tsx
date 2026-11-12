@@ -248,7 +248,7 @@ export default function AIPlanner({ setTab, user }: AIPlannerProps) {
               ) : savedTrips.length === 0 ? (
                 <p className="text-xs text-slate-400 font-mono py-4">No saved trips yet. Generate your first signature travel plan!</p>
               ) : (
-                <div className="space-y-3 max-h-[400px] overflow-y-auto pr-1">
+                <div className="space-y-3 max-h-100 overflow-y-auto pr-1">
                   {savedTrips.map((trip) => (
                     <div
                       key={trip.id}
@@ -539,7 +539,7 @@ export default function AIPlanner({ setTab, user }: AIPlannerProps) {
                         <div key={day.day} className="relative space-y-2">
                           
                           {/* Dot connector */}
-                          <div className="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-blue-600 text-white border border-white dark:border-slate-900 flex items-center justify-center font-mono font-bold text-[8px]">
+                          <div className="absolute -left-7.75 top-1 w-4 h-4 rounded-full bg-blue-600 text-white border border-white dark:border-slate-900 flex items-center justify-center font-mono font-bold text-[8px]">
                             {day.day}
                           </div>
 

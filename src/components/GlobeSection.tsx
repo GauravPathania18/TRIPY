@@ -903,7 +903,7 @@ export default function GlobeSection() {
   return (
     <section className="py-24 bg-slate-950 relative overflow-hidden text-white" id="globe-centerpiece">
       {/* Decorative Grid Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b12_1px,transparent_1px),linear-gradient(to_bottom,#1e293b12_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b12_1px,transparent_1px),linear-gradient(to_bottom,#1e293b12_1px,transparent_1px)] bg-size-[24px_24px]"></div>
       
       {/* Ambient Blue Gradients */}
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/10 rounded-full filter blur-[100px] pointer-events-none"></div>

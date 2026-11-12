@@ -117,13 +117,13 @@ export default function Packages({ setTab, user }: PackagesProps) {
               className="bg-white dark:bg-slate-900 border border-gray-200/50 dark:border-white/5 rounded-3xl overflow-hidden shadow-xl shadow-gray-200/5 dark:shadow-none hover:shadow-2xl transition-all duration-300 flex flex-col"
             >
               {/* Image with Gradient Banner */}
-              <div className="relative h-64 sm:h-80 md:h-[400px] w-full">
+              <div className="relative h-64 sm:h-80 md:h-100 w-full">
                 <img
                   src={pkg.image_url}
                   alt={pkg.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/60 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <span className="px-3.5 py-1.5 rounded-lg text-[10px] font-mono tracking-widest uppercase font-bold bg-white text-slate-950 shadow-md">
                     {pkg.difficulty}
@@ -382,7 +382,7 @@ export default function Packages({ setTab, user }: PackagesProps) {
                     {/* Selected package badge */}
                     <div className="flex justify-between items-center text-sm font-medium border-b border-gray-100 dark:border-white/5 pb-4">
                       <span className="text-slate-500">Selected Route</span>
-                      <span className="text-slate-900 dark:text-white text-right max-w-[200px] truncate">{selectedPkg.name}</span>
+                      <span className="text-slate-900 dark:text-white text-right max-w-50 truncate">{selectedPkg.name}</span>
                     </div>
 
                     {/* Dates picking */}

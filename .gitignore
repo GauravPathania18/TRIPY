@@ -42,3 +42,4 @@ assets/
 .git/
 .gitignore
 metadata.json
+db.json
